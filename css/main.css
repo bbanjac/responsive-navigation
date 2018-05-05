@@ -1,0 +1,108 @@
+/*=============
+=== DESKTOP ===  
+=============*/
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-image: url("../images/main-bg.jpg");
+    background-repeat: repeat;
+}
+
+/* NAVIGATION */
+.navigation-bar {
+    background-color: #333;
+    width: 98%;
+    padding: 1%;
+    box-shadow: 0px 0px 5px #333;
+}
+
+.navigation-bar>h2 {
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    float: left;
+    margin-right: 3%;
+    margin-top: -0.3%;
+    color: #cecece;
+    pointer-events: none;
+}
+
+.navigation-bar>a {
+    text-decoration: none;
+}
+
+.navigation-bar>a>button {
+    background-color: transparent;
+    border: none;
+    color: #cecece;
+    font-weight: normal;
+    font-size: 17px;
+    border-bottom: 1px solid transparent;
+    margin-right: 0.5%;
+    transition: 0.3s;
+}
+
+.navigation-bar>a>button:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.navigation-bar>a>button:focus {
+    outline: none;
+}
+
+.icon {
+    float: right;
+    margin-right: 0.5%;
+    color: #cecece;
+    transition: 0.3s;
+    border-bottom: 1px solid transparent;
+}
+
+.icon:hover {
+    color: #fff;
+}
+
+#OpenNavBtn {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*============
+=== MOBILE  ==  
+============*/
+@media only screen and (max-width: 600px) {
+    /* NAVIGATION */
+    .navigation-bar {
+        position: fixed;
+        top: 0px;
+    }
+    .navigation-bar>a>button {
+        width: 100%;
+        transition: 0.3s;
+    }
+    .navigation-bar>a {
+        display: none;
+    }
+    .navigation-bar>a>.icon {
+        margin-top: 2%;
+        margin-right: 2%;
+    }
+    #OpenNavBtn {
+        color: #cecece;
+        display: block;
+        float: right;
+        margin-right: 1%;
+    }
+}
